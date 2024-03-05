@@ -1,0 +1,94 @@
+.Locaisarea {
+    width: 100%;
+    max-width: 1216px;
+    margin: auto;
+    margin-bottom: 50px; /* Adicionando margem na parte de baixo */
+  }
+  
+  .Locais {
+    width: 100%;
+    max-width: 1216px;
+    height: 440px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background-image: url("../../assets/back.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Locaistext {
+    text-align: center;
+    max-width: 576px;
+    width: 100%;
+    padding: 0 16px; /* Adicionado para espaçamento nas laterais em telas menores */
+  }
+  
+  .Locaistext h1 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+  .Locaistext p {
+    color: var(--Gray-Gray-5, #F7F6F8);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  
+  .buttonLocais {
+    padding: 14.5px 24px;
+    gap: 8px;
+    border-radius: 8px;
+    background: white;
+    outline: none;
+    color: black;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 40px;
+  }
+  
+  .buttonLocais:hover {
+    background: var(--gray-400);
+  }
+  
+  /* Adicionando media query para tornar o layout mais responsivo em telas menores */
+  @media (max-width: 768px) {
+    .Locais {
+      height: auto;
+    }
+  
+    .Locaistext h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .Locaistext p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .Locaistext h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  
+    .Locaistext p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  

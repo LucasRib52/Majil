@@ -1,0 +1,123 @@
+.vantagem {
+    display: flex;
+    padding: 112px;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textos h4 {
+    color: var(--gray-600);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.textos h2 {
+    color: black;
+    text-align: center;
+/* Heading / Heading32 */
+    font-family: Rubik;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 137.5% */
+    
+}
+
+.demo {
+    display: flex;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.group h4 {
+    color: var(--Gray-Gray-1, #232129);
+    /* Heading / Heading18 */
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.group p {
+    color: var(--Gray-Gray-2, #494455);
+/* Body / Body16 */
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+}
+
+.fotos {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(204,205,193,1) 40%, rgba(219,219,10,1) 98%);
+}
+
+.fotos img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .demo {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .demo {
+        gap: 50px;
+    }
+
+    .group h4 {
+        font-size: 16px;
+    }
+
+    .group p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 670px) {
+    .vantagem {
+        padding: 64px;
+    }
+
+    .textos h2 {
+        font-size: 24px;
+    }
+
+    .demo {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .group {
+        align-items: center;
+    }
+}

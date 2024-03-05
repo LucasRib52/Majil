@@ -1,0 +1,63 @@
+/* Footer.module.css */
+
+.Footer {
+  width: 100%;
+  min-height: 300px;
+  background: var(--gray-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footergroups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.group {
+  flex: 1 1 220px; /* Mínimo, preferido, máximo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.group h4,
+.group a,
+.group p {
+  color: #FFF;
+  font-family: Rubik;
+}
+
+.group h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.group a,
+.group p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.67;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.group a:hover {
+  color: var(--gray-800);
+}
+
+/* Adicione um estilo para os ícones das redes sociais */
+.group a svg {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .group {
+      flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,233 @@
+.planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 16px;
+    background: var(--Gray-Gray-5, #F7F6F8);
+  }
+
+.planotext h1{
+    color: var(--Gray-Gray-1, #232129);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px; /* 130% */
+}
+
+.planotext p {
+    color: var(--Gray-Gray-2, #494455);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+    margin-top: 15px
+}
+
+
+
+.selecionarplanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 16px;
+    background: var(--Gray-Gray-5, #F7F6F8);
+}
+
+.todosplanos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .plano {
+    width: calc(33.333% - 16px); /* Três planos por linha */
+    max-width: 300px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+  }
+
+.planosprincipais {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 248px;
+    height: 347px;
+}
+
+.planosprincipais h1 {
+    color: black;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px; 
+}
+
+.planosprincipais h2 {
+    color: black;
+
+    /* Heading / Heading24 */
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+}
+
+.planosprincipais p {
+    color: var(--Gray-Gray-2, #494455);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+.circulopremium {
+    width: 320px;
+    height: 576px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: var(--gray-400);
+
+}
+
+
+.planopremium {
+    margin-left: 24px;
+    margin-top: 48px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 272px;
+    height: 476px;
+}
+
+.planopremium h1 {
+    color: var(--white);
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px; 
+}
+
+.planopremium h2 {
+    color: var(--white);
+
+    /* Heading / Heading24 */
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+}
+
+h6 {
+    font-size: 17px;
+}
+
+.planopremium p {
+    color: var(--white);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.planopremium span {
+    color: white;
+}
+
+
+
+.buttonpopular {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: var(--gray-600);
+    color: var(--white);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 140% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 130px;
+}
+
+
+.buttonplanos {
+    display: flex;
+    width: 248px;
+    padding: 14.5px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: black;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.buttonplanos:hover {
+    background: var(--gray-600);
+}
+
+span {
+    width: 248px;
+    color: #848199;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; /* 150% */
+}
+
+
+@media (max-width: 768px) {
+    .plano {
+      width: 100%; /* Um plano por linha em telas menores */
+    }
+  
+    .planotext h1 {
+      font-size: 32px;
+    }
+  
+    .planotext p {
+      font-size: 16px;
+    }
+
+  }
